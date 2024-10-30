@@ -211,3 +211,74 @@ h1, h2, h3 {
         color: #e0e0e0;
     }
 }
+
+
+/* Styling Home page*/
+#home-page {
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000080; /* background */
+    color: white;
+    text-align: center; /
+}
+
+/* Styling Headers */
+#home-page h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+
+#home-page nav ul {
+    list-style: none; 
+    padding: 0;
+}
+
+#home-page nav ul li {
+    margin: 20px 0; 
+}
+
+
+#home-page nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    transition: color 0.3s ease; 
+}
+
+
+#home-page nav ul li a:hover {
+    color: #ffdd57; 
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    #home-page nav ul li a {
+        transition: none; 
+    }
+    
+    #home-page nav ul li a:hover {
+        color: #ffdd57; 
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    #home-page {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    #home-page nav ul li a {
+        color: #ffdd57; 
+    }
+    
+    #home-page nav ul li a:hover {
+        color: white; 
+    }
+}
+
